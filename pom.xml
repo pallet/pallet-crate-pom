@@ -4,56 +4,41 @@
   <parent>
     <groupId>org.cloudhoist</groupId>
     <artifactId>pallet-pom</artifactId>
-    <version>0.4.0</version>
+    <version>0.4.5</version>
     <relativePath/>
   </parent>
   <groupId>org.cloudhoist</groupId>
   <artifactId>pallet-crate-pom</artifactId>
-  <version>0.4.2-SNAPSHOT</version>
+  <version>0.6.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Pallet crates parent module</name>
-  <url>http://github.com/pallet/pallet-crates</url>
+  <name>Pallet crates parent pom</name>
+  <url>http://github.com/pallet/pallet-crate-pom</url>
   <inceptionYear>2010</inceptionYear>
 
   <scm>
-    <connection>scm:git:git://github.com/pallet/pallet-crates.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/pallet/pallet-crates.git</developerConnection>
-    <url>https://github.com/pallet/pallet-crates</url>
+    <connection>scm:git:git://github.com/pallet/pallet-crate-pom.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/pallet/pallet-crate-pom.git</developerConnection>
+    <url>https://github.com/pallet/pallet-crate-pom</url>
   </scm>
 
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>com.theoryinpractise</groupId>
-          <artifactId>clojure-maven-plugin</artifactId>
-          <configuration>
-          </configuration>
-          <executions>
-            <execution>
-              <id>compile-clojure</id>
-              <phase>compile</phase>
-              <goals>
-                <goal>compile</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>test-clojure</id>
-              <phase>test</phase>
-              <goals>
-                <goal>test</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>marginalia</id>
-              <configuration>
-                <skip>true</skip>
-              </configuration>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+    <testSourceDirectory>test</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.cloudhoist.plugin</groupId>
+        <artifactId>zi</artifactId>
+        <version>0.3.6</version>
+        <executions>
+          <execution>
+            <id>default-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 
   <dependencies>
@@ -70,6 +55,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>org.cloudhoist</groupId>
+      <artifactId>pallet-crates-test</artifactId>
+      <version>0.6.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>marginalia</groupId>
       <artifactId>marginalia</artifactId>
       <optional>true</optional>
@@ -82,7 +73,7 @@
     <dependency>
       <groupId>vmfest</groupId>
       <artifactId>vmfest</artifactId>
-      <version>0.2.2</version>
+      <version>0.2.3</version>
       <optional>true</optional>
       <scope>test</scope>
     </dependency>
@@ -100,102 +91,107 @@
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>automated-admin-user</artifactId>
-        <version>0.4.0</version>
+        <version>0.6.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.cloudhoist</groupId>
+        <artifactId>crontab</artifactId>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>etc-default</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>etc-hosts</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>hudson</artifactId>
-        <version>0.4.2-SNAPSHOT</version>
+        <version>0.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>iptables</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>java</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.1</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>maven</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>mysql</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>nagios</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>nagios-config</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>package-builder</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>php</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>resolv</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>rubygems</artifactId>
-        <version>0.4.0</version>
+        <version>0.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>ruby</artifactId>
-        <version>0.4.0</version>
+        <version>0.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>ssh</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>ssh-key</artifactId>
-        <version>0.4.2-SNAPSHOT</version>
+        <version>0.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>sudoers</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>tomcat</artifactId>
-        <version>0.4.0</version>
+        <version>0.6.1</version>
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
         <artifactId>upstart</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -208,23 +204,42 @@
           <plugin>
             <groupId>com.theoryinpractise</groupId>
             <artifactId>clojure-maven-plugin</artifactId>
+            <version>1.3.8</version>
             <configuration>
-              <clojureOptions>-Dpallet.test.live=true -Dpallet.test.service-name=${pallet.test.service-name} -Dpallet.test.cleanup-nodes=${pallet.test.cleanup-nodes} -Dpallet.test.image-list=${pallet.test.image-list}</clojureOptions>
+              <clojureOptions>-Dpallet.test.live=true -Dpallet.test.service-name=${pallet.test.service-name} -Dpallet.test.cleanup-nodes=${pallet.test.cleanup-nodes} -Dpallet.test.image-list=${pallet.test.image-list} -Dpallet.test.parallel=${pallet.test.parallel} -Dpallet.test.session-type=${pallet.test.session-type} -Xmx1024m -Djava.awt.headless=true -XX:MaxPermSize=256m</clojureOptions>
+              <testSourceDirectories>
+                <testSourceDirectory>test</testSourceDirectory>
+              </testSourceDirectories>
+              <sourceDirectories>
+                <sourceDirectory>src</sourceDirectory>
+              </sourceDirectories>
+              <testDeclaredNamespaceOnly>false</testDeclaredNamespaceOnly>
             </configuration>
+            <executions>
+              <execution>
+                <id>test-clojure</id>
+                <phase>test</phase>
+                <goals>
+                  <goal>test</goal>
+                </goals>
+              </execution>
+            </executions>
           </plugin>
         </plugins>
       </build>
       <properties>
         <pallet.test.service-name>live-test</pallet.test.service-name>
         <pallet.test.cleanup-nodes>true</pallet.test.cleanup-nodes>
+        <pallet.test.parallel>false</pallet.test.parallel>
         <pallet.test.image-list />
+        <pallet.test.session-type />
       </properties>
     </profile>
   </profiles>
 
   <properties>
-    <pallet.version>0.4.9</pallet.version>
-    <jclouds.version>1.0-beta-8</jclouds.version>
+    <pallet.version>0.6.4</pallet.version>
+    <jclouds.version>1.0.0</jclouds.version>
   </properties>
 
   <!-- make sure we can find the parent pom -->
