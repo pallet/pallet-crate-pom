@@ -1,5 +1,9 @@
 # Release notes
 
+## pallet-crate-pom-0.6.0
+
+- Move back to an independent parent pom for the crates.
+
 - Explicit overide of parent pom relativePath
 
 - Remove relativePath elements, and update to https for github links
