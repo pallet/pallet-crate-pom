@@ -1,8 +1,8 @@
-# Pallet crate for pallet-crate-pom
+# pallet-crate-pom
 
-This a crate to install and run pallet-crate-pom via [Pallet](http://pallet.github.com/pallet).
+A parent pom for [Pallet](http://pallet.github.com/pallet) crates.
 
-[Release Notes](https://github.com/pallet/pallet-crate-pom-crate//blob/master/ReleaseNotes.md)
+[Release Notes](https://github.com/pallet/pallet-crate-pom/blob/master/ReleaseNotes.md)
 
 ## Support
 
