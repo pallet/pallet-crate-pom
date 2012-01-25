@@ -32,14 +32,18 @@
       <plugin>
         <groupId>org.cloudhoist.plugin</groupId>
         <artifactId>zi</artifactId>
-        <version>0.4.1</version>
+        <version>${zi.version}</version>
         <dependencies>
           <dependency>
             <groupId>ritz</groupId>
             <artifactId>ritz</artifactId>
-            <version>0.2.0</version>
+            <version>${ritz.version}</version>
           </dependency>
         </dependencies>
+        <configuration>
+          <codoxTargetDirectory>doc/api/${pallet.doc.version}</codoxTargetDirectory>
+          <codoxApiVersion>${pallet.doc.version}</codoxApiVersion>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -243,7 +247,10 @@
 
   <properties>
     <pallet.version>0.7.0-SNAPSHOT</pallet.version>
+    <pallet.doc.version>0.7</pallet.doc.version>
     <jclouds.version>1.0.0</jclouds.version>
+    <zi.version>0.4.4</zi.version>
+    <ritz.version>0.2.0</ritz.version>
   </properties>
 
   <!-- make sure we can find the parent pom -->
