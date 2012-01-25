@@ -114,6 +114,11 @@
       </dependency>
       <dependency>
         <groupId>org.cloudhoist</groupId>
+        <artifactId>git</artifactId>
+        <version>0.5.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.cloudhoist</groupId>
         <artifactId>hudson</artifactId>
         <version>0.6.0</version>
       </dependency>
