@@ -37,6 +37,10 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <codoxTargetDirectory>doc/api/${pallet.doc.version}</codoxTargetDirectory>
+          <codoxApiVersion>${pallet.doc.version}</codoxApiVersion>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -238,9 +242,10 @@
   </profiles>
 
   <properties>
-    <pallet.version>0.6.4</pallet.version>
+    <pallet.version>0.6.6</pallet.version>
+    <pallet.doc.version>0.6</pallet.doc.version>
     <jclouds.version>1.0.0</jclouds.version>
-    <zi.version>0.4.1</zi.version>
+    <zi.version>0.4.4</zi.version>
   </properties>
 
   <!-- make sure we can find the parent pom -->
