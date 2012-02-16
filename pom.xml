@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.cloudhoist</groupId>
     <artifactId>pallet-pom</artifactId>
-    <version>0.7.0</version>
+    <version>0.7.1</version>
     <relativePath />
   </parent>
   <groupId>org.cloudhoist</groupId>
@@ -22,24 +22,10 @@
   </scm>
 
   <build>
-    <testSourceDirectory>test</testSourceDirectory>
-    <resources>
-      <resource>
-        <directory>resources</directory>
-      </resource>
-    </resources>
     <plugins>
       <plugin>
         <groupId>org.cloudhoist.plugin</groupId>
         <artifactId>zi</artifactId>
-        <version>${zi.version}</version>
-        <dependencies>
-          <dependency>
-            <groupId>ritz</groupId>
-            <artifactId>ritz</artifactId>
-            <version>${ritz.version}</version>
-          </dependency>
-        </dependencies>
         <configuration>
           <codoxTargetDirectory>doc/api/${pallet.doc.version}</codoxTargetDirectory>
           <codoxApiVersion>${pallet.doc.version}</codoxApiVersion>
@@ -56,39 +42,8 @@
     </dependency>
     <dependency>
       <groupId>org.cloudhoist</groupId>
-      <artifactId>pallet</artifactId>
-      <version>${pallet.version}</version>
-      <type>test-jar</type>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.cloudhoist</groupId>
       <artifactId>pallet-crates-test</artifactId>
       <version>0.7.0-SNAPSHOT</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>marginalia</groupId>
-      <artifactId>marginalia</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>autodoc</groupId>
-      <artifactId>autodoc</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>vmfest</groupId>
-      <artifactId>vmfest</artifactId>
-      <version>0.2.3</version>
-      <optional>true</optional>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jclouds</groupId>
-      <artifactId>jclouds-all</artifactId>
-      <version>${jclouds.version}</version>
-      <optional>true</optional>
       <scope>test</scope>
     </dependency>
   </dependencies>
