@@ -30,6 +30,10 @@
           <codoxApiVersion>${pallet.doc.version}</codoxApiVersion>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.0</version>
+      </plugin>
     </plugins>
   </build>
 
