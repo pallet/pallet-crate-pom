@@ -209,7 +209,7 @@
   </profiles>
 
   <properties>
-    <pallet.version>0.7.0-SNAPSHOT</pallet.version>
+    <pallet.version>0.7.0-beta.1</pallet.version>
     <pallet.doc.version>0.7</pallet.doc.version>
     <jclouds.version>1.0.0</jclouds.version>
     <zi.version>0.4.4</zi.version>
