@@ -1,5 +1,16 @@
 # Release notes
 
+## pallet-crate-pom-0.7.0
+
+- Add maven-site-plugin, so that it is disabled
+
+- Update parent pom to allow groupId override, and add explicit clojure
+  dependency
+
+- Add codox configuration
+
+- Update live-test profile to use zi
+
 ## pallet-crate-pom-0.6.0
 
 - Move back to an independent parent pom for the crates.
