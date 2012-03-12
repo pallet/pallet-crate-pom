@@ -8,7 +8,7 @@
   </parent>
   <groupId>org.cloudhoist</groupId>
   <artifactId>pallet-crate-pom</artifactId>
-  <version>0.7.1-SNAPSHOT</version>
+  <version>0.8.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Pallet crates parent pom</name>
   <url>http://github.com/pallet/pallet-crate-pom</url>
@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.cloudhoist</groupId>
       <artifactId>pallet-crates-test</artifactId>
-      <version>0.7.0</version>
+      <version>0.8.0-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -209,10 +209,9 @@
   </profiles>
 
   <properties>
-    <pallet.version>0.7.0-beta.1</pallet.version>
-    <pallet.doc.version>0.7</pallet.doc.version>
-    <jclouds.version>1.0.0</jclouds.version>
-    <zi.version>0.4.4</zi.version>
+    <pallet.version>0.8.0-SNAPSHOT</pallet.version>
+    <pallet.doc.version>0.8</pallet.doc.version>
+    <zi.version>0.4.5</zi.version>
     <ritz.version>0.2.0</ritz.version>
   </properties>
 
