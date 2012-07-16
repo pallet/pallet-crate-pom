@@ -4,7 +4,8 @@
   <parent>
     <groupId>org.cloudhoist</groupId>
     <artifactId>pallet-pom</artifactId>
-    <version>0.7.2</version>
+    <version>0.7.3</version>
+    <relativePath />
   </parent>
   <groupId>org.cloudhoist</groupId>
   <artifactId>pallet-crate-pom</artifactId>
@@ -56,121 +57,6 @@
     </dependency>
   </dependencies>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>automated-admin-user</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>crontab</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>etc-default</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>etc-hosts</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>git</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>hudson</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>iptables</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>java</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>maven</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>mysql</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>nagios</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>nagios-config</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>package-builder</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>php</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>resolv</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>rubygems</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>ruby</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>ssh</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>ssh-key</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>sudoers</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>tomcat</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.cloudhoist</groupId>
-        <artifactId>upstart</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <profiles>
     <profile>
       <id>live-test</id>
@@ -211,16 +97,6 @@
   <properties>
     <pallet.version>0.8.0-SNAPSHOT</pallet.version>
     <pallet.doc.version>0.8</pallet.doc.version>
-    <zi.version>0.4.5</zi.version>
-    <ritz.version>0.2.0</ritz.version>
   </properties>
-
-  <!-- make sure we can find the parent pom -->
-  <repositories>
-    <repository>
-      <id>sonatype</id>
-      <url>http://oss.sonatype.org/content/repositories/releases</url>
-    </repository>
-  </repositories>
 
 </project>
