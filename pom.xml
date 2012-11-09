@@ -51,8 +51,42 @@
     </dependency>
     <dependency>
       <groupId>org.cloudhoist</groupId>
-      <artifactId>pallet-crates-test</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <artifactId>pallet</artifactId>
+      <version>${pallet.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.cloudhoist</groupId>
+      <artifactId>pallet-vmfest</artifactId>
+      <version>${palletvmfest.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.cloudhoist</groupId>
+      <artifactId>pallet-jclouds</artifactId>
+      <version>${palletjclouds.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jclouds</groupId>
+      <artifactId>jclouds-all</artifactId>
+      <version>${jclouds.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -97,6 +131,9 @@
   <properties>
     <pallet.version>0.8.0-SNAPSHOT</pallet.version>
     <pallet.doc.version>0.8</pallet.doc.version>
+    <palletjclouds.version>1.5.0</palletjclouds.version>
+    <jclouds.version>1.5.2</jclouds.version>
+    <palletvmfest.version>0.2.0-beta.3</palletvmfest.version>
   </properties>
 
 </project>
