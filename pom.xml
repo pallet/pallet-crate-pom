@@ -129,7 +129,7 @@
   </profiles>
 
   <properties>
-    <pallet.version>0.8.0-SNAPSHOT</pallet.version>
+    <pallet.version>0.8.0-alpha.6</pallet.version>
     <pallet.doc.version>0.8</pallet.doc.version>
     <palletjclouds.version>1.5.0</palletjclouds.version>
     <jclouds.version>1.5.2</jclouds.version>
