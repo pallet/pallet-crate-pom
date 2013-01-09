@@ -78,6 +78,27 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>vmfest</groupId>
+      <artifactId>vmfest</artifactId>
+      <version>${vmfest.version}</version>
+      <scope>test</scope>
+      <!-- 0.3.0-alpha.1 depends on clj-http which pulls in commons-logging -->
+      <!-- but it doesn't actually use clj-http -->
+      <exclusions>
+        <exclusion>
+          <groupId>clj-http</groupId>
+          <artifactId>clj-http</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.clojars.tbatchelli</groupId>
+      <artifactId>vboxjws</artifactId>
+      <version>${vbox.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.cloudhoist</groupId>
       <artifactId>pallet-jclouds</artifactId>
       <version>${palletjclouds.version}</version>
@@ -87,6 +108,12 @@
       <groupId>org.jclouds</groupId>
       <artifactId>jclouds-all</artifactId>
       <version>${jclouds.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>1.6.6</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -129,11 +156,14 @@
   </profiles>
 
   <properties>
-    <pallet.version>0.8.0-alpha.6</pallet.version>
+    <pallet.version>0.8.0-alpha.8</pallet.version>
     <pallet.doc.version>0.8</pallet.doc.version>
     <palletjclouds.version>1.5.0</palletjclouds.version>
     <jclouds.version>1.5.2</jclouds.version>
-    <palletvmfest.version>0.2.0-beta.3</palletvmfest.version>
+    <palletvmfest.version>0.2.1</palletvmfest.version>
+    <vmfest.version>0.3.0-alpha.1</vmfest.version>
+    <vbox.version>4.2.4</vbox.version>
+    <clojure.version>1.4.0</clojure.version>
   </properties>
 
 </project>
