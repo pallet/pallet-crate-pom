@@ -2,7 +2,7 @@
 
 A parent pom for [Pallet](http://pallet.github.com/pallet) crates.
 
-[Release Notes](https://github.com/pallet/pallet-crate-pom/blob/master/ReleaseNotes.md)
+[Release Notes](ReleaseNotes.md)
 
 ## Support
 
